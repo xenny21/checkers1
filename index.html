@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <title>Checkers</title>
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="css/default.css" rel="stylesheet"/>
+    <script src="js/utils.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/module/message.js"></script>
+    <link href="js/module/message.css" rel="stylesheet"/>
+</head>
+<body onload="load()" onresize="resizeBoard()">
+
+<center><INPUT TYPE="button" VALUE="Новая игра" onClick='parent.location="javascript:location.reload()"'></center>
+
+<table cellspacing="0" cellpadding="0" class="board_containter_table">
+    <tr>
+        <td class="board_containter_td" id="board_containter"></td>
+    </tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="message hidden" id="message">
+    <tr>
+        <td>
+            <div class="message_container" id="message_container">
+                <div class="message_close" id="message_close">x</div>
+                <div class="message_info" id="message_info"></div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
